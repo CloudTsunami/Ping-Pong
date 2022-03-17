@@ -27,7 +27,7 @@ const net = {
   y: 0,
   width: netWidth,
   height: netHeight,
-  color: "#FFF"
+  color: "#00008B"
 };
 
 // user paddle
@@ -36,7 +36,7 @@ const user = {
   y: canvas.height / 2 - paddleHeight / 2,
   width: paddleWidth,
   height: paddleHeight,
-  color: '#FFF',
+  color: '#008000',
   score: 0
 };
 
@@ -45,7 +45,7 @@ const ai = {
   y: canvas.height / 2 - paddleHeight / 2,
   width: paddleWidth,
   height: paddleHeight,
-  color: '#FFF',
+  color: '#FF0000',
   score: 0
 };
 
@@ -57,7 +57,7 @@ const ball = {
   speed: 7,
   velocityX: 5,
   velocityY: 5,
-  color: '#05EDFF'
+  color: '#FFFF00'
 };
 
 /* objects declaration ends */
@@ -74,7 +74,7 @@ function drawNet() {
 
 // function to draw score
 function drawScore(x, y, score) {
-  ctx.fillStyle = '#fff';
+  ctx.fillStyle = '#FF69B4';
   ctx.font = '35px sans-serif';
 
   // syntax --> fillText(text, x, y)
@@ -191,7 +191,7 @@ function update() {
     alert("User Scored A Point!")
 
 
-    if (user.score<20){
+    if (user.score < 20){
     reset();
     }
     else{
@@ -214,7 +214,7 @@ function update() {
 
     alert("AI Scored A Point!")
 
-    if (ai.score<20){
+    if (ai.score < 20){
     reset();
     }
     else{
@@ -265,7 +265,7 @@ function update() {
 // render function draws everything on to canvas
 function render() {
   // set a style
-  ctx.fillStyle = "#000"; /* whatever comes below this acquires black color (#000). */
+  ctx.fillStyle = "#800080"; /* whatever comes below this acquires purple color (#800080). */
   // draws the black board
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
