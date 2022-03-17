@@ -186,14 +186,11 @@ function update() {
     scoreSound.play();
     // then user scored 1 point
     
-    //PUT THE DISPLAY MESSAGE FOR PLAYER WIN HERE FOR ASSIGNMENT QUESTION #2
-    //ALSO MAYBE USE A TIME INTERVAL WHICH WE LEARNED IN CLASS
     user.score += 1;
 
     alert("User Scored A Point!")
 
-    //FOR ASSIGNMENT QUESTION #3 MAKE IT SO THAT IF THE PLAYER SCORE IS 20 THE GAME DOESNT GET RESET
-    //AND THEN DISPLAY A MESSAGE
+
     if (user.score<20){
     reset();
     }
@@ -213,14 +210,10 @@ function update() {
     scoreSound.play();
     // then ai scored 1 point
 
-    //PUT THE DISPLAY MESSAGE FOR AI WIN HERE FOR ASSIGNMENT QUESTION #2
-    //ALSO MAYBE USE A TIME INTERVAL WHICH WE LEARNED IN CLASS
     ai.score += 1;
 
     alert("AI Scored A Point!")
 
-    //FOR ASSIGNMENT QUESTION #3 MAKE IT SO THAT IF THE AI SCORE IS 20 THE GAME DOESNT GET RESET
-    //AND THEN DISPLAY A MESSAGE
     if (ai.score<20){
     reset();
     }
